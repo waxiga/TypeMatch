@@ -1,0 +1,154 @@
+﻿/* CSS Document for index.html*/
+body{
+text-align:center;
+background-color:#900;
+background-image:url(../images/apoints_bg.jpg);
+font-size:12px;
+margin:0px;
+padding:0px;
+}
+*{
+border:none;
+}
+#alertWindow_container{
+position:absolute;
+left:0px;
+top:0px;
+width:100%;
+height:620px;
+background-color:#fff;
+filter:alpha(opacity=60);
+-moz-opacity:.60;
+opacity:0.6;
+z-index:10;
+}
+.windowBgDiv1{
+width:260px;
+height:auto;
+border-bottom:4px solid #444;
+border-right:4px solid #444;
+position:absolute;
+z-index:11;
+margin-top:150px;
+left:35%;
+}
+.window_table{
+width:auto;
+height:100%;
+background-color:#6C0000;
+color:#FFCC66;
+border:1px solid #CC3300;
+border-collapse:collapse;
+}
+.window_table a{
+color:#0f0;
+}
+.window_table td{
+height:auto;
+border:1px solid #CC3300;
+border-collapse:collapse;
+text-align:right;
+padding-right:15px;
+padding-left:15px;
+}
+.window_table .window_content{
+background-color:#C22525;
+background-image:url(../images/apoints_bg.jpg);
+height:115px;
+text-align:left;
+display:block;
+}
+.wu{
+background-image:url(../images/loading.gif);
+background-repeat:no-repeat;
+background-position:center;
+}
+#container{
+width:980px;
+height:418px;
+position:relative;
+top:50px;
+margin-left:auto;
+margin-right:auto;
+}
+#loginbtn{
+width:100%;
+height:18px;
+display:block;
+clear:both;
+float:left;
+text-align:right;
+color:#33FF00;
+}
+#loginbtn a{
+text-align:right;
+margin:auto;
+margin-right:10px;
+color:#FFF;
+}
+#loginbtn a:hover{
+color:#0F0;
+}
+#content{
+background-image:url(../images/wubg.jpg);
+background-repeat:repeat-x;
+text-align:left;
+display:block;
+clear:both;
+height:400px;
+width:100%;
+position:static;
+border-bottom:13px solid #330000;
+}
+#affiche{
+float:left;
+width:270px;
+height:250px;
+border:0px solid #AF7260;
+margin:25px;
+color:#FFF;
+overflow:hidden;
+}
+#cententPic{
+float:left;
+}
+#nav{
+line-height:25px;
+text-align:center;
+float:right;
+margin-top:30px;
+margin-left:60px;
+}
+#nav a{
+	color:#FFCC00;
+	text-decoration:none;
+	margin-right:30px;
+	display:block;
+	width:140px;
+}
+#nav a:hover{
+	color:#CCCCCC;
+	background-color:#993300;
+	background-image:url(../images/ad_bg.gif);
+}
+#footer{
+color:#ccc;
+position:relative;
+top:20px;
+line-height:18px;
+}
+#footer a{
+color:#fff;
+text-decoration:none;
+}
+.contentcontent{
+line-height:25px;
+text-indent:24px;
+}
+#messageCount{
+color:#fff;
+font-size:24px;
+font-weight:bold;
+}
+
+

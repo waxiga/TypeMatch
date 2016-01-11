@@ -1,0 +1,162 @@
+﻿/* CSS Document */
+body{
+	background-image:url(../images/loginface_bg.gif);
+	background-repeat:repeat-x;
+	background-color:#000;
+	font-size:12px;
+	text-align:center;
+	border:none;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	color:#339933;
+}
+*{
+border:none;
+}
+#container{
+	background:url(../images/loginface.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	width:408px;
+	height:289px;
+	margin-top:105px;
+	padding:0px;
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+}
+.uid{
+	width:125px;
+	height:12px;
+	clear:both;
+	display:block;
+	float:left;
+	margin-left:132px;
+	margin-top:116px;
+	color:#339933;
+	font-weight:bold;
+}
+*html .uid{
+/*for IE6 */
+	width:124px;
+	height:12px;
+	margin-left:65px;
+	margin-top:111px;
+}
+*+html .uid{
+/*for IE7 */
+	width:122px;
+	height:12px;
+	margin-left:132px;
+	margin-top:112px;
+}
+.pwd{
+	width:125px;
+	height:12px;
+	clear:both;
+	display:block;
+	float:left;
+	margin-left:132px;
+	margin-top:13px;
+	color:#339933;
+}
+*html .pwd{
+/*for IE6 */
+	width:124px;
+	height:12px;
+	margin-left:65px;
+	margin-top:11px;
+}
+*+html .pwd{
+/*for IE7 */
+	width:123px;
+	height:12px;
+	margin-left:132px;
+	margin-top:10px;
+}
+#footbtn{
+	display:block;
+	width:100%;
+}
+.forbtn{
+background-color:transparent;
+border-color:transparent;
+border:0px;
+}
+.loginin{
+	width:60px;
+	height:18px;
+	display:block;
+	float:left;
+	text-align:left;
+	margin-left:130px;
+	margin-top:12px;
+}
+*html .loginin{
+/*for IE6 */
+margin-left:65px;
+}
+.reset{
+	width:59px;
+	height:18px;
+	display:block;
+	float:left;
+	text-align:left;
+	margin-left:5px;
+	margin-top:14px;
+}
+.gotoIndex{
+	width:55px;
+	height:20px;
+	display:block;
+	float:left;
+	clear:both;
+	text-align:left;
+	margin-left:300px;
+	margin-top:24px;
+	text-decoration:none;
+}
+*html .gotoIndex{
+	margin-left:151px;
+}
+.tips_uid,.tips_pwd{
+	color:#33FF00;
+	display:block;
+	padding-top:115px;
+}
+*html .tips_uid{
+
+}
+.tips_pwd{
+	padding-top:144px;
+}
+.showsomething{
+	width:250px;
+	height:20px;
+	padding:0px;
+	text-align:left;
+	background-color:#fff;
+	border:1px solid #FF0;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:32px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.showwaitting_gif{
+	float:left;
+	text-align:center;
+	vertical-align:bottom;
+	margin-left:4px;
+	margin-top:2px;
+}
+.tips_txt{
+	height:100%;
+	line-height:20px;
+	height:20px;
+	text-indent:5px;
+	float:left;
+}
+

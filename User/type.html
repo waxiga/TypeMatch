@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>打字</title>
+<link rel="stylesheet" type="text/css" href="hbwl.css">
+
+<style type="text/css">body {background-image: url(images/daziLine.gif);}</style>
+<script language='JavaScript' src='js/ajax.js'></script>
+</head>
+<body oncontextmenu="return false">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<form name="formWenzhang" method="post" action="">
+  <tr>
+    <td class="mainTitle1" style="border-bottom:1px solid #cccccc;">
+中文练习的文章分类:<select name="articleClass" onChange="formWenzhang.submit()">
+      <option value="">--请选择--</option>
+      <option value='3' selected>1.优秀小学生作文</option><option value='4'>2.小学语文课文</option>
+      </select>
+中文练习的文章标题:<select name="articleID">
+      <option value="">--请选择--</option>
+      <option value='1' selected>1.我的读书生活</option><option value='2'>2.雨中情</option><option value='3'>3.我的理想</option><option value='10'>4.有爱的人生</option><option value='11'>5.花的可贵</option><option value='12'>6.吵架的烦恼</option>
+      </select>
+      <input type="submit" name="bt_wenzhangid" value="确定" class="btn">
+      <input type="button" name="btn_showHelp" value="关闭提示" onClick="ifShowHelp(this)" class="btn">    
+    </td>
+  </tr></form>
+<form name="form1" method="post" action=""> 
+
+<tr>
+<td class="mainTitle2" height="43" style="border-bottom:1px solid #cccccc;">
+<table width='100%' border=0 align=center cellpadding=0 cellspacing=0>
+<tr align='center'>
+<td width="30%" align="center" id='shijian'>剩余时间:0秒</td>
+<td width="20%" align="center" id='words'>正确字数:0</td>
+<td width="20%" align="left" id='wrong'>错误字数:0</td>
+<td width="20%" align='left' id='sudu'>速度:0字/分</td>
+<td width="10%" align="left"><input name='sbt_tj' type='submit' class='btn' id='sbt_tj' value='提交' onClick='javascript:return checks()' ></td></tr></table></td>
+</tr>
+<tr><td height="14"></td></tr>
+<tr><td height="20" valign='top'>
+<div id="showArticle" class="dazishow" style='cursor:default;position:absolute;top:65;' onMouseOut="zoom_show.style.display='none'">在漫漫的人生旅途中，书是我的精神食粮，我经常吮吸着它那知识的甘霖，并将其消化成这世间人生之路上的精神驱动力。每有空闲，不是手不释卷，就是温故知新，不断充实自己的闲暇时光。我对书里舍己为人的英雄深深敬畏着，发自内心痛恨那些卑鄙无耻的坏蛋。从书中，我读到了勤劳、善良与正义，也读到了历史的兴衰与人间的不平。是熏陶，是感染，更是教诲。我常常在无边无际的知识海洋里遨游着，那种感觉仿佛久旱逢雨，又像大坝泄洪，滔滔而下，心里产生了一种无比的快活感。儿时，我就喜欢阅读一些课外书籍，有一股无形的力量，宛如一块磁铁紧紧地吸引着我。我爱不释手，甚至常入“废寝忘食”之境。《西游记》、《海的女儿》……这些美丽的故事情有独钟，也正是它们首先打开了我的心扉，带着故事中的神奇飞入了我的心灵世界，留下了第一个亘古无法退去的印迹。时间在飞逝，日积月累，许多书籍都成了我形影不离的伙伴。那五花八门、形形色色的报纸，也是我必读不可的。坐在房间里，看到全世界，通过它，我了解了国内外大事，一篇又一篇催人泪下的故事也回荡在我的心中，并将永远激励着我奋勇向前！人生有限，不可能事事经历，也不需事事经历，一个获得知识、丰富阅历的重要途径便是读书。书籍，能把辽阔的空间和漫长的时间毫无保留地浇灌给自己，让自己能够驰骋古今，经天纬地。读书之乐何处寻，数点梅花天地心。书是我生活中的一大乐趣。我坚信，只有让我们的灵魂融入书的海洋，让书的内容融入我们的生命，才能有一个比水海更为广阔的心灵空间！</div>
+<div contenteditable=true id="inputwords" class="dazishow" onpaste="return false" onKeyPress="MyKeyPress()" onKeyUp='checkduicuo()'></div></td>
+</tr>    
+<input name='daziTime' type='hidden' value=1>
+<input name='zishu_dui' type='hidden' value=0>
+<input name='zishu_cuo' type='hidden' value=0>
+<input name='time_yong' type='hidden'>
+</form>  
+<div id='zoom_show' style='font-size:20px; font-weight:bold; padding:8px; background-color:#eeeeee; color:#FF0000; position:absolute; border:2px #5BC514 solid; display:none; zIndex: 999; filter:alpha(opacity=80);'></div>
+<script language='javascript' src='js/dazi.js'></SCRIPT>
+<script>show_secs();checkduicuo();document.getElementById("inputwords").focus();</script>
+<script for=showArticle event=onclick>document.getElementById("inputwords").focus();</script>
+
+	<script language='JavaScript' src='js/pinyingdic.js'></script>
+	<script language='JavaScript' src='js/wbdic.js'></script>
+	<script for=showArticle event=onmousemove src='js/py.js'></SCRIPT>
+
+</table>
+</body>
+</html>

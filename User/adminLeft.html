@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>left</title>
+<style type="text/css">
+body{
+font-size:12px;
+margin:0px;
+}
+#container{
+width:180px;
+height:auto;
+display:block;
+overflow:hidden;
+}
+#contentTop{
+width:100%;
+height:110px;
+display:block;
+border-bottom:1px solid #A4BD84;
+}
+#topBox1{
+width:100%;
+height:30px;
+display:block;
+background-image:url(images/LeftTopBg.gif);
+background-repeat:repeat-x;
+}
+#topBox1 span{
+display:block;
+float:left;
+}
+.pic1{
+width:14px;
+height:14px;
+background-image:url(images/leftPic1.gif);
+margin-left:9px;
+margin-top:6px;
+}
+.pic2{
+width:60px;
+height:17px;
+background-image:url(images/leftBtn1.gif);
+margin-left:5px;
+margin-top:4px;
+}
+.pic2 a{
+width:60px;
+height:17px;
+display:block;
+}
+.pic3{
+width:12px;
+height:12px;
+background-image:url(images/leftPic2.gif);
+margin-left:66px;
+margin-top:6px;
+}
+#topBox2{
+width:100%;
+height:100px;
+display:block;
+}
+#topBox2 a,#topBox2 img{
+border:none;
+text-align:left;
+text-decoration:none;
+color:#41870C;
+}
+#topBox2 a:hover{
+text-decoration:underline;
+}
+table td{
+text-align:center;
+float:none;
+line-height:30px;
+}
+table a{
+cursor:pointer;
+}
+#contentBottom{
+width:100%;
+height:auto;
+display:block;
+margin-top:2px;
+border-top:1px solid #A4BD84;
+}
+.theBoxRom{
+margin-top:20px;
+margin-left:10px;
+}
+.contentBoxs{
+width:90%;
+margin-left:5%;
+height:auto;
+display:block;
+margin-top:5px;
+}
+.contentBoxs span{
+width:100%;
+height:16px;
+line-height:16px;
+font-family:"黑体";
+font-size:14px;
+color:#003366;
+cursor:pointer;
+}
+.contentBoxs ul{
+margin:0px;
+padding:0px;
+margin-left:20px;
+margin-top:1px;
+}
+.contentBoxs li{
+width:100%;
+height:20px;
+line-height:20px;
+display:block;
+text-indent:23px;
+list-style:none;
+background-image:url(images/line3.gif);
+background-position:left center;
+background-repeat:no-repeat;
+}
+.contentBoxs .lastBtn{
+background-image:url(images/line2.gif);
+}
+.contentBoxs a{
+color:#000;
+text-decoration:none;
+border:none;
+font-size:12px;
+line-height:20px;
+height:20px;
+background-position:left 0px;
+background-repeat:no-repeat;
+padding-left:15px;
+}
+.contentBoxs img{
+border:none;
+}
+.node1{
+background-image:url(images/node1.gif);
+}
+.node2{
+background-image:url(images/node2.gif);
+}
+.node3{
+background-image:url(images/node3.gif);
+}
+.node4{
+background-image:url(images/node4.jpg);
+}
+.node5{
+background-image:url(images/node5.jpg);
+}
+.node6{
+background-image:url(images/node6.jpg);
+}
+.node7{
+background-image:url(images/node7.gif);
+}
+.node8{
+background-image:url(images/bottomPic1.gif);
+}
+.node9{
+background-image:url(images/mbi_038.gif);
+}
+.node10{
+background-image:url(images/a_4.gif);
+}
+.node11{
+background-image:url(images/a_8.gif);
+}
+.node12{
+background-image:url(images/a_9.jpg);
+}
+.node13{
+background-image:url(images/a_12.gif);
+}
+.node14{
+background-image:url(images/arc1.gif);
+}
+.node15{
+background-image:url(images/club_main_bg.gif);
+}
+.node16{
+background-image:url(images/club_main_righta.gif);
+}
+.node17{
+background-image:url(images/friend.gif);
+}
+.node18{
+background-image:url(images/good.gif);
+}
+.node19{
+background-image:url(images/menoy.gif);
+}
+.node20{
+background-image:url(images/n.gif);
+}
+.node21{
+background-image:url(images/n_1.gif);
+}
+.node22{
+background-image:url(images/gif53_023.gif);
+}
+.node23{
+background-image:url(images/a_10.gif);
+}
+.node24{
+background-image:url(images/a_11.gif);
+}
+.node25{
+background-image:url(images/mbi_016.gif);
+}
+.node26{
+background-image:url(images/mbi_032.gif);
+}
+.node27{
+background-image:url(images/mbi_015.gif);
+}
+.bigPicBtn a{
+width:40px;
+height:40px;
+display:block;
+background-position:center;
+background-repeat:no-repeat;
+border:none;
+text-decoration:none;
+}
+.bigPicBtn .a2{
+background-image:url(images/leftBtn2.jpg);
+}
+.bigPicBtn .a3{
+background-image:url(images/leftBtn3.jpg);
+}
+.bigPicBtn .a4{
+background-image:url(images/leftBtn4.jpg);
+}
+</style>
+<script language="javascript">
+function nodeClick(elementID){
+	//节点事件
+	var theElem=document.getElementById(elementID);
+	var theElems=theElem.getElementsByTagName("li");
+	if(theElem.style.display=="none"){
+		theElem.style.display="block";
+	}
+	else{
+		theElem.style.display="none";
+	}
+}
+</script>
+<script language="javascript">
+function btnDown(obj,i){
+	obj.style.backgroundImage="url(images/leftBtn"+i+"3.jpg)";
+}
+function btnUp(obj,i){
+	obj.style.backgroundImage="url(images/leftBtn"+i+".jpg)";
+}
+function btnOver(obj,i){
+	obj.style.backgroundImage="url(images/leftBtn"+i+"2.jpg)";
+}
+function btnOut(obj,i){
+	obj.style.backgroundImage="url(images/leftBtn"+i+".jpg)";
+}
+function changTreeBox(objID){
+	document.getElementById("theBoxRom1").style.display="none";
+	document.getElementById("theBoxRom2").style.display="none";
+	document.getElementById("theBoxRom3").style.display="none";
+	document.getElementById(objID).style.display="block";
+}
+var dishi;
+	var maxValue=180;
+	var minValue=1;
+	var onORoff=true;
+	var onORoff2=true;
+function setWidth(){
+	var theElement=window.top.document.getElementById("myFrame");
+	maxValue=maxValue-30;
+		var theStr=maxValue+",*";
+		theElement.cols=theStr;
+		if(maxValue>0){
+		dishi=window.setTimeout("setWidth()",50);
+		}
+		else{
+		 maxValue=180;
+		 theStr="0,*";
+		 theElement.cols=theStr;
+		 window.clearTimeout(dishi);
+		}
+}
+document.onkeypress=function(){ 
+    if(window.event.keyCode==96){
+    var theall=window.top.document.getElementById("allFrame");
+    var theElement=window.top.document.getElementById("myFrame");
+    if(theall.rows!="56,*,22"){
+	    theall.rows="56,*,22";
+	    theElement.cols="180,*";
+	}
+	else{
+	   theall.rows="0,*,0";
+	    theElement.cols="0,*";
+	  }
+    }
+} 
+</script>
+</head>
+
+<body>
+<div id="container">
+	<div id="contentTop">
+		<div id="topBox1">
+			<span class="pic1"></span>
+			<span class="pic2"><a title="点击切换到专家模式" href="" target="_parent"></a></span>
+			<span class="pic3" style="cursor:pointer;" onclick="setWidth()"></span>
+		</div>
+		<div id="topBox2">
+			<table width="100%" height="auto" border="0">
+  <tr class="bigPicBtn">
+    <td><a class="a2" onmouseover="btnOver(this,2)" onmouseout="btnOut(this,2)" onmousedown="btnDown(this,2)" onmouseup="btnUp(this,2)" onclick="changTreeBox('theBoxRom1')"></a></td>
+    <td><a class="a3" onmouseover="btnOver(this,3)" onmouseout="btnOut(this,3)" onmousedown="btnDown(this,3)" onmouseup="btnUp(this,3)" onclick="changTreeBox('theBoxRom2')"></a></td>
+    <td><a class="a4" onmouseover="btnOver(this,4)" onmouseout="btnOut(this,4)" onmousedown="btnDown(this,4)" onmouseup="btnUp(this,4)" onclick="changTreeBox('theBoxRom3')"></a></td>
+  </tr>
+  <tr>
+    <td><a onclick="changTreeBox('theBoxRom1')">系统管理</a></td>
+    <td><a onclick="changTreeBox('theBoxRom2')">内容管理</a></td>
+    <td><a onclick="changTreeBox('theBoxRom3')">会员管理</a></td>
+  </tr>
+</table>
+
+		</div>
+	</div>
+	<div id="contentBottom">
+		<div id="theBoxRom1" style="display:block;" class="theBoxRom">
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box1')"><img width="12px" height="12px" src="images/admin8.gif" />&nbsp;系统设置</span>
+				<ul id="box1" style="display:block;">
+					<li><a target="mainFrame" href="adminUserManage.aspx" class="node1">人员管理</a></li>
+					<li><a target="mainFrame" href="adminLoginLog.aspx" class="node2">系统日志</a></li>
+					<li><a target="mainFrame" href="yellowPageManage.aspx" class="node5">黄页管理</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="guestBookManage.aspx" class="node10">建议提问</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box2')"><img width="12px" height="12px" src="images/admin3.gif" />&nbsp;首页管理</span>
+				<ul id="box2" style="display:block;">
+					<li><a target="mainFrame" href="http://www.0746888.com/htmlsheng.aspx" class="node4">手动生成</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box3')"><img width="12px" height="12px" src="images/admin1.gif" />&nbsp;实用工具</span>
+				<ul id="box3" style="display:block;">
+					<li><a target="mainFrame" href="serverInfo.aspx" class="node6">系统探针</a></li>
+					<li><a target="mainFrame" href="sqlTran.aspx" class="node7">SQL查询分析器</a></li>
+					<li><a target="mainFrame" href="sessionManage.aspx" class="node8">Session管理器</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="ApplicationsManage.aspx" class="node11">App管理器</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="theBoxRom2" style="display:none;" class="theBoxRom">
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box4')"><img width="12px" height="12px" src="images/leftPic2.gif" />&nbsp;商家信息管理</span>
+				<ul id="box4" style="display:none;">
+					<li><a target="mainFrame" href="shangjiaManage.aspx" class="node11">商家信息管理</a></li>
+					<li><a target="mainFrame" href="shangjiaPicManage.aspx" class="node2">商家图片管理</a></li>
+					<li><a target="mainFrame" href="shangjiaPinglun.aspx" class="node3">网友评论管理</a></li>
+					<li><a target="mainFrame" href="shangjiaManage.aspx" class="node4">纠错信息管理</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="shangjiaWrong.aspx" class="node6">网友报错查询</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box5')"><img width="12px" height="12px" src="images/icon_new.gif" />&nbsp;分类广告管理</span>
+				<ul id="box5" style="display:none;">
+					<li><a target="mainFrame" href="fenleiAD.aspx" class="node7">广告信息</a></li>
+					<li><a target="mainFrame" href="ADGuestbook.aspx" class="node8">评论信息</a></li>
+					<li><a target="mainFrame" href="fenleiTopAD.aspx" class="node9">固顶信息</a></li>
+					<li class="lastBtn"><a href="fenleiClass.aspx" target="mainFrame" class="node12">广告类别</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box6')"><img width="12px" height="12px" src="images/a_9.jpg" />&nbsp;资讯文章管理</span>
+				<ul id="box6" style="display:block;">
+					<li><a target="mainFrame" href="newsManage.aspx" class="node13">文章管理</a></li>
+					<li><a target="mainFrame" href="newsPinglun.aspx" class="node14">评论管理</a></li>
+					<li><a target="mainFrame" href="newsHuishou.aspx" class="node15">回收管理</a></li>
+					<li><a target="mainFrame" href="newsClassManage.aspx" class="node21">文章类别</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="newsAdd.aspx" class="node22">添加文章</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box7')"><img width="12px" height="12px" src="images/admin4.gif" />&nbsp;房产信息管理</span>
+				<ul id="box7" style="display:none;">
+					<li><a target="mainFrame" href="fangchanManage.aspx" class="node23">房产信息管理</a></li>
+					<li><a target="mainFrame" href="fangchanPinglun.aspx" class="node24">房产评论管理</a></li>
+					<li><a target="mainFrame" href="fangchanGonggao.aspx" class="node25">房产公告管理</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="fangchanPic.aspx" class="node26">房产图片管理</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box8')"><img width="12px" height="12px" src="images/dk_dian.gif" />&nbsp;旅游信息管理</span>
+				<ul id="box8" style="display:none;">
+					<li><a target="mainFrame" href="lvyouManage.aspx" class="node27">旅游信息管理</a></li>
+					<li><a target="mainFrame" href="lvyouPinglun.aspx" class="node2">旅游评论管理</a></li>
+					<li><a target="mainFrame" href="lvyouGonggao.aspx" class="node3">旅游公告管理</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="lvyouPic.aspx" class="node7">旅游图片管理</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box9')"><img width="12px" height="12px" src="images/node5.jpg" />&nbsp;企业信息管理</span>
+				<ul id="box9" style="display:none;">
+					<li><a target="mainFrame" href="qiyeManage.aspx" class="node4">企业信息管理</a></li>
+					<li><a target="mainFrame" href="qiyePinglun.aspx" class="node5">企业评论管理</a></li>
+					<li><a target="mainFrame" href="qiyeGonggao.aspx" class="node6">企业公告管理</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="qiyePIC.aspx" class="node8">企业图片管理</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div id="theBoxRom3" style="display:none;" class="theBoxRom">
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box10')"><img width="12px" height="12px" src="images/node5.jpg" />&nbsp;会员管理</span>
+				<ul id="box10" style="display:block;">
+					<li><a target="mainFrame" href="webUserManage.aspx" class="node9">会员列表</a></li>
+					<li class="lastBtn"><a href="webUserLog.aspx" target="mainFrame" class="node11">会员登陆日志</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box11')"><img width="12px" height="12px" src="images/menoy.gif" />&nbsp;金币管理</span>
+				<ul id="box11" style="display:none;">
+					<li><a target="mainFrame" href="coin_alluser.aspx" class="node4">用户列表</a></li>
+					<li><a target="mainFrame" href="coin_getRecord.aspx" class="node2">获取记录</a></li>
+					<li><a target="mainFrame" href="coin_useRecord.aspx" class="node3">消费记录</a></li>
+					<li><a target="mainFrame" href="coin_chengfaRecord.aspx" class="node5">惩罚记录</a></li>
+					<li><a target="mainFrame" href="coin_addRecord.aspx" class="node6">追加记录</a></li>
+					<li><a target="mainFrame" href="coin_recordIDManage.aspx" class="node7">外部 I D</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="coin_getRecord.aspx" class="node9">警报记录</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box14')"><img width="12px" height="12px" src="images/bottomPic2.gif" />&nbsp;你问我答管理</span>
+				<ul id="box14" style="display:none;">
+					<li><a target="mainFrame" href="askClassManage.aspx" class="node1">问 题 类 别</a></li>
+					<li><a target="mainFrame" href="askManage.aspx" class="node2">提问信息管理</a></li>
+					<li><a target="mainFrame" href="answerManage.aspx" class="node3">回答信息管理</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="endingAskManage.aspx" class="node7">快要过期问题</a></li>
+				</ul>
+			</div>
+			<div class="contentBoxs">
+				<span onclick="nodeClick('box15')"><img width="12px" height="12px" src="images/node3.gif" />&nbsp;消息管理</span>
+				<ul id="box15" style="display:block;">
+					<li><a target="mainFrame" href="systemMessage.aspx" class="node4">系统消息管理</a></li>
+					<li><a target="mainFrame" href="systemMessageSend.aspx" class="node5">发送系统消息</a></li>
+					<li class="lastBtn"><a target="mainFrame" href="userMessageSend.aspx" class="node7">发送用户消息</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+</body>
+</html>

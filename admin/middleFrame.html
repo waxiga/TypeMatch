@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2900.3132" name=GENERATOR>
+<STYLE type="text/css">
+body{
+margin:0px;
+background-color:#B89621;
+}
+.o1 {
+FONT-SIZE: 12px; 
+COLOR: #ffffff;
+TEXT-DECORATION: none;
+line-height:50px;
+height:50px;
+width:8px;
+display:block;
+font-family:"宋体"
+}
+.containner{
+width:7px;
+border-left:1px solid #FFCC00;
+border-right:2px solid #FFCC00;
+height:550px;
+display:block;
+float:left;
+}
+.mybotton{
+height:50px;
+background-color:#990000;
+width:8px;
+display:block;
+position:relative;
+top:250px;
+}
+
+</STYLE>
+
+<SCRIPT language=javascript>
+<!--
+var iniCols, noCols, o_mf, o_ms, s;
+function ini() {
+	o_mf = parent.document.getElementById("mainf");
+	o_ms = document.getElementById("menuSwitch");
+	noCols = iniCols = o_mf.cols;
+	if ((pos = noCols.indexOf(",")) != -1) {
+		noCols = "0" + noCols.substring(pos);
+	}	
+	s = false;
+}
+function changeLeft(){
+	s = !s;
+	o_mf.cols = s ? noCols : iniCols;
+	o_ms.innerHTML = s ? "&#9658;" : "&#9668;";
+}
+//-->
+</SCRIPT>
+
+
+</HEAD>
+<BODY onload=ini()>
+<div class="containner">
+   <div class="mybotton" title="点击折叠"><A  title="点击折叠" class="o1" id="menuSwitch" href="javascript:changeLeft();">&#9668;</A></div></div>
+</BODY>
+</HTML>

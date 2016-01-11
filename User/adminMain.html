@@ -1,0 +1,35 @@
+<title>永州信息港后台管理中心</title>
+<style type="text/css">
+#leftFrame{
+border:1px solid #9BD453;
+}
+</style>
+<script language="javascript">
+document.onkeypress=function(){ 
+    if(window.event.keyCode==96){
+    var theall=window.top.document.getElementById("allFrame");
+    var theElement=window.top.document.getElementById("myFrame");
+    if(theall.rows!="56,*,22"){
+	    theall.rows="56,*,22";
+	    theElement.cols="180,*";
+	}
+	else{
+	   theall.rows="0,*,0";
+	    theElement.cols="0,*";
+	  }
+    }
+} 
+</script>
+<frameset rows="56,*,22" cols="*" frameborder="no" border="0" framespacing="0" id="allFrame">
+  <frame src="adminTop.aspx" name="topFrame" scrolling="No" noresize="noresize" id="topFrame" title="topFrame" />
+  <frameset rows="*" cols="180,*" framespacing="0" frameborder="no" border="0" id="myFrame">
+    <frame src="adminLeft.html" name="leftFrame" scrolling="No" noresize="noresize" id="leftFrame" title="leftFrame" />
+    <frame src="main.aspx" name="mainFrame" id="mainFrame" title="mainFrame" />
+  </frameset>
+  <frame src="adminBottom.html" name="bottomFrame" scrolling="No" noresize="noresize" id="bottomFrame" title="bottomFrame" />
+</frameset>
+
+<noframes>
+<body>
+</body>
+</noframes>
